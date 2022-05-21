@@ -1,3 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('./../assets/fonts/Oswald.eot');
+    src: local('☺'), url('./../assets/fonts/Oswald.woff') format('woff'), url('./../assets/fonts/Oswald.ttf') format('truetype'), url('./../assets/fonts/Oswald.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuattrocentoSans-Regular';
+    src: url('./../assets/fonts/QuattrocentoSans-Regular.eot');
+    src: local('☺'), url('./../assets/fonts/QuattrocentoSans-Regular.woff') format('woff'), url('./../assets/fonts/QuattrocentoSans-Regular.ttf') format('truetype'), url('./../assets/fonts/QuattrocentoSans-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "QuattrocentoSans-Regular";
+    margin: 0;
+}
+
+@layer components {
+    
+}
+
+/*--------------------------------- NProgess --------------------------*/
+#nprogress .bar {
+    background: #fff !important;
+}
+
+.slick-dots {
+    bottom: 20px; 
+}
+
+/* the parent */
+.slick-list {
+    margin-bottom: -8px;
+}
+
+
+/** Date Time **/
+.time {
+    float: left;
+    background: url(./../assets/images/bg-time.png) no-repeat left top;
+    color: #fff;
+    font-family: "Oswald";
+    display: block;
+    height: 42px;
+    width: 42px;
+    margin: 0 5px 15px 0;
+    padding: 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#connect a,
+#pagination .previous,
+#pagination .next,
+#blog .comments {
+    background: url(./../assets/images/icons.png) no-repeat;
+}
+
+#connect a {
+    display: inline-block;
+    height: 33px;
+    margin: 0 10px;
+}
+
+#connect a.facebook {
+    background-position: -46px -112px;
+    width: 33px;
+}
+
+#connect a.googleplus {
+    background-position: -46px -153px;
+    width: 34px;
+}
+
+#connect a.twitter {
+    background-position: -46px -194px;
+    width: 40px;
+}
+
+#connect a.facebook:hover {
+    background-position: 0 -112px;
+}
+
+#connect a.googleplus:hover {
+    background-position: 0 -153px;
+}
+
+#connect a.twitter:hover {
+    background-position: 0 -194px;
+}
+
+
+@media (min-width: 768px) {
+    .slick-dots {
+        bottom: 50px; 
+    }
+}

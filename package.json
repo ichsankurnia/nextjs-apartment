@@ -1,18 +1,29 @@
 {
+  "name": "nextjs-apartment",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.1",
     "next": "latest",
+    "next-images": "^1.8.4",
+    "nprogress": "^0.2.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-lazy-load-image-component": "^1.5.4",
+    "react-slick": "^0.29.0",
+    "react-tiny-fab": "^4.0.4"
   },
   "devDependencies": {
     "@types/node": "17.0.4",
+    "@types/nprogress": "^0.2.0",
     "@types/react": "17.0.38",
+    "@types/react-lazy-load-image-component": "^1.5.2",
+    "@types/react-slick": "^0.23.8",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
