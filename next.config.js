@@ -5,4 +5,8 @@ module.exports = withImages({
   images: {
     disableStaticImages: true,
   },
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true
+  }
 })
