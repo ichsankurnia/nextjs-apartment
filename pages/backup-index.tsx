@@ -25,7 +25,7 @@ const BackUpIndex: NextPage = () => {
         <div className='pt-10 pb-5 bg-chocolate-900 border-b border-white flex items-center justify-center'>
           <div className='flex item-center justify-between w-full md:w-[940px]'>
             <div id="logo">
-              <a href="index.html"><img src={logo.src} alt="LOGO" /></a>
+              <a href="index.html"><img src={logo} alt="LOGO" /></a>
             </div>
             <ul id="navigation">
               <li className="selected">
@@ -51,7 +51,7 @@ const BackUpIndex: NextPage = () => {
           {/* AdBox */}
           <div className='flex flex-col sm:flex-row sm:h-[407px] w-full border border-white'>
             <div className='relative w-full h-full'>
-              <img src={chair.src} alt="Img" className='w-full h-full' />
+              <img src={chair} alt="Img" className='w-full h-full' />
               <div className='absolute z-10 bottom-5 right-7 text-center'>
                 <p>Whicker Chair</p>
                 <p className='text-[24px]'>$250.00</p>
@@ -65,14 +65,14 @@ const BackUpIndex: NextPage = () => {
                   You can choose from our wide selection of furnitures on display. Either for your home, office or other estab- lishments. If you {"can’t"} find what you need, we can make it according to your needs.
                 </p>
               </div>
-              <img src={adDetails.src} className='w-full h-full' />
+              <img src={adDetails} className='w-full h-full' />
             </div>
           </div>
 
           <ul className='flex flex-col sm:flex-row w-full text-white'>
             <li className='w-full bg-chocolate-500'>
               <div className='cursor-pointer'>
-                <img src={livingRoom.src} alt="Img" className='w-full hover:opacity-40' /> <a href="index.html"></a>
+                <img src={livingRoom} alt="Img" className='w-full hover:opacity-40' /> <a href="index.html"></a>
               </div>
               <div className="bg-[url(./../assets/images/separator-light.png)] bg-repeat-x bg-left-top px-5 py-5">
                 <h4 className='text-chocolate-100 mb-2 uppercase font-oswald'>Living Room</h4>
@@ -83,7 +83,7 @@ const BackUpIndex: NextPage = () => {
             </li>
             <li className="w-full bg-chocolate-900">
               <div className='cursor-pointer'>
-                <img src={bedRoom.src} alt="Img" className='w-full hover:opacity-40' /> <a href="index.html"></a>
+                <img src={bedRoom} alt="Img" className='w-full hover:opacity-40' /> <a href="index.html"></a>
               </div>
               <div className="bg-[url(./../assets/images/separator-light.png)] bg-repeat-x bg-left-top px-5 py-5">
                 <h4 className='text-chocolate-100 mb-2 uppercase font-oswald'>Bedroom</h4>
@@ -94,7 +94,7 @@ const BackUpIndex: NextPage = () => {
             </li>
             <li className="w-full bg-chocolate-500">
               <div className='cursor-pointer'>
-                <img src={kitchen.src} alt="Img" className='w-full hover:opacity-40' /> <a href="index.html"></a>
+                <img src={kitchen} alt="Img" className='w-full hover:opacity-40' /> <a href="index.html"></a>
               </div>
               <div className="bg-[url(./../assets/images/separator-light.png)] bg-repeat-x bg-left-top px-5 py-5">
                 <h4 className='text-chocolate-100 mb-2 uppercase font-oswald'>Kitchen</h4>
@@ -126,7 +126,7 @@ const BackUpIndex: NextPage = () => {
               <h4 className='text-grey text-[14px] uppercase p-5 px-7'>From the Blog</h4>
               <div className='flex items-center justify-around flex-col sm:flex-row'>
                 <div className='bg-[url(./../assets/images/bg-box.png)] bg-no-repeat bg-left-top text-chocolate-900 w-[270px]'>
-                  <img src={carving.src} alt="Img" className='float-right' />
+                  <img src={carving} alt="Img" className='float-right' />
                   <div className='p-5 text-sm'>
                     <p className='text-[12px] font-quattrocentoSans font-thin'>April 16, 2023</p>
                     <p className='mb-14'>CC's Carving</p>
@@ -135,7 +135,7 @@ const BackUpIndex: NextPage = () => {
 
                 </div>
                 <div className='bg-[url(./../assets/images/bg-box.png)] bg-no-repeat bg-left-top text-chocolate-900 w-[270px]'>
-                  <img src={resort.src} alt="Img" className='float-right' />
+                  <img src={resort} alt="Img" className='float-right' />
                   <div className='p-5 text-sm'>
                     <p className='text-[12px] font-quattrocentoSans font-thin'>April 15, 2023</p>
                     <p className='mb-14'>5 Star Resorts</p>
@@ -156,7 +156,7 @@ const BackUpIndex: NextPage = () => {
               
               <div className="w-full pr-5 px-5 md:px-0">
                 <h4 className='uppercase font-oswald mb-3'>Visit our Showroom</h4>
-                <a href="gallery.html"><img src={showRoom.src} alt="Img" /></a>
+                <a href="gallery.html"><img src={showRoom} alt="Img" /></a>
                 <p>
                   4885 Wilson Street<br /> Victorville, CA 92392<br /><br /> 760-962-9541<br /><br /> <a href="index.html">info@carvedcreations.com</a>
                 </p>
