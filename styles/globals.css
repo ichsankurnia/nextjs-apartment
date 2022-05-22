@@ -44,7 +44,7 @@ body {
 }
 
 .slick-dots {
-    bottom: 20px; 
+    bottom: 1   0px; 
 }
 
 
@@ -134,6 +134,6 @@ body {
 
 @media (min-width: 768px) {
     .slick-dots {
-        bottom: 50px; 
+        bottom: 40px; 
     }
 }
