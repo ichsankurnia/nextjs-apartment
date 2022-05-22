@@ -7,17 +7,17 @@
 
 @font-face {
     font-family: 'Oswald';
-    src: url('./../public/fonts/Oswald.eot');
-    src: local('☺'), url('./../public/fonts/Oswald.woff') format('woff'), url('./../public/fonts/Oswald.ttf') format('truetype'), url('./../public/fonts/Oswald.svg') format('svg');
+    src: url('/fonts/Oswald.eot');
+    src: local('☺'), url('/fonts/Oswald.woff') format('woff'), url('/fonts/Oswald.ttf') format('truetype'), url('/fonts/Oswald.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'QuattrocentoSans-Regular';
-    src: url('./../public/fonts/QuattrocentoSans-Regular.eot');
-    src: local('☺'), url('./../public/fonts/QuattrocentoSans-Regular.woff') format('woff'), url('./../public/fonts/QuattrocentoSans-Regular.ttf') format('truetype'), url('./../public/fonts/QuattrocentoSans-Regular.svg') format('svg');
-    font-weight: normal;
+    src: url('/fonts/QuattrocentoSans-Regular.eot');
+    src: local('☺'), url('/fonts/QuattrocentoSans-Regular.woff') format('woff'), url('/fonts/QuattrocentoSans-Regular.ttf') format('truetype'), url('/fonts/QuattrocentoSans-Regular.svg') format('svg');
+    font-weight: normal;    
     font-style: normal;
 }
 
@@ -51,7 +51,7 @@ body {
 /** Date Time **/
 .time {
     float: left;
-    background: url(./../public/images/bg-time.png) no-repeat left top;
+    background: url(/images/bg-time.png) no-repeat left top;
     color: #fff;
     font-family: "Oswald";
     display: block;
@@ -70,7 +70,7 @@ body {
 #pagination .previous,
 #pagination .next,
 #blog .comments {
-    background: url(./../public/images/icons.png) no-repeat;
+    background: url(/images/icons.png) no-repeat;
 }
 
 #connect a {
