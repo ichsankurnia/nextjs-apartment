@@ -1,22 +1,22 @@
 /* Website template by freewebsitetemplates.com */
 @font-face {
     font-family: 'Oswald';
-    src: url('./../assets/fonts/Oswald.eot');
-    src: local('☺'), url('./../assets/fonts/Oswald.woff') format('woff'), url('./../assets/fonts/Oswald.ttf') format('truetype'), url('./../assets/fonts/Oswald.svg') format('svg');
+    src: url('./../public/fonts/Oswald.eot');
+    src: local('☺'), url('./../public/fonts/Oswald.woff') format('woff'), url('./../public/fonts/Oswald.ttf') format('truetype'), url('./../public/fonts/Oswald.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'QuattrocentoSans-Regular';
-    src: url('./../assets/fonts/QuattrocentoSans-Regular.eot');
-    src: local('☺'), url('./../assets/fonts/QuattrocentoSans-Regular.woff') format('woff'), url('./../assets/fonts/QuattrocentoSans-Regular.ttf') format('truetype'), url('./../assets/fonts/QuattrocentoSans-Regular.svg') format('svg');
+    src: url('./../public/fonts/QuattrocentoSans-Regular.eot');
+    src: local('☺'), url('./../public/fonts/QuattrocentoSans-Regular.woff') format('woff'), url('./../public/fonts/QuattrocentoSans-Regular.ttf') format('truetype'), url('./../public/fonts/QuattrocentoSans-Regular.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    background: #211917 url(./../assets/images/bg-body.png) repeat-y center top;
+    background: #211917 url(./../public/images/bg-body.png) repeat-y center top;
     font-family: "QuattrocentoSans-Regular";
     margin: 0;
 }
@@ -88,13 +88,13 @@ img {
 #contents,
 #contents>div,
 #contents div.body {
-    background-image: url(./../assets/images/bg-contents.png);
+    background-image: url(./../public/images/bg-contents.png);
     background-repeat: no-repeat;
 }
 
 .btn1,
 .btn2 {
-    background: url(./../assets/images/buttons.png) no-repeat;
+    background: url(./../public/images/buttons.png) no-repeat;
     cursor: pointer;
     font: 14px/24px "Oswald";
     text-decoration: none;
@@ -102,19 +102,19 @@ img {
 }
 
 .frame {
-    background: url(./../assets/images/frames.png) no-repeat;
+    background: url(./../public/images/frames.png) no-repeat;
 }
 
 #connect a,
 #pagination .previous,
 #pagination .next,
 #blog .comments {
-    background: url(./../assets/images/icons.png) no-repeat;
+    background: url(./../public/images/icons.png) no-repeat;
 }
 
 #sidebar,
 #sidebar div.body {
-    background-image: url(./../assets/images/bg-sidebar.png);
+    background-image: url(./../public/images/bg-sidebar.png);
     background-repeat: no-repeat;
 }
 
@@ -149,7 +149,7 @@ img {
 /** Date Time **/
 .time {
     float: left;
-    background: url(./../assets/images/bg-time.png) no-repeat left top;
+    background: url(./../public/images/bg-time.png) no-repeat left top;
     color: #fff;
     font-family: "Oswald";
     display: block;
@@ -299,7 +299,7 @@ img {
 }
 
 #adbox div.details {
-    background: url(./../assets/images/bg-pattern.jpg) no-repeat left top;
+    background: url(./../public/images/bg-pattern.jpg) no-repeat left top;
     height: 407px;
     width: 380px;
     padding: 61px 45px;
@@ -370,7 +370,7 @@ img {
 }
 
 #featured div.details {
-    background: url(./../assets/images/separator-light.png) repeat-x left top;
+    background: url(./../public/images/separator-light.png) repeat-x left top;
     padding: 16px 20px 0;
 }
 
@@ -399,7 +399,7 @@ img {
 
 div.contact {
     float: left;
-    background: url(./../assets/images/separator-light-vertical.png) repeat-y right top;
+    background: url(./../public/images/separator-light-vertical.png) repeat-y right top;
     height: 225px;
     width: 254px;
     padding: 20px 40px 0 20px;
@@ -446,7 +446,7 @@ div.blog h4 {
 
 div.blog>div {
     float: left;
-    background: url(./../assets/images/bg-box.png) no-repeat left top;
+    background: url(./../public/images/bg-box.png) no-repeat left top;
     width: 280px;
     margin: 0 16px;
     padding: 0 0 0 15px;
@@ -534,7 +534,7 @@ div.blog a.more:hover {
 }
 
 #about #main h1 {
-    background: url(./../assets/images/separator-light.png) repeat-x left bottom;
+    background: url(./../public/images/separator-light.png) repeat-x left bottom;
     padding: 0 0 18px;
 }
 
@@ -556,7 +556,7 @@ div.blog a.more:hover {
 }
 
 #gallery h1 {
-    background: url(./../assets/images/separator-light.png) repeat-x left bottom;
+    background: url(./../public/images/separator-light.png) repeat-x left bottom;
     padding: 0 0 6px;
 }
 
@@ -567,7 +567,7 @@ div.blog a.more:hover {
 }
 
 #gallery .items li {
-    background: url(./../assets/images/separator-light.png) repeat-x left bottom;
+    background: url(./../public/images/separator-light.png) repeat-x left bottom;
     display: inline-block;
     width: 100%;
     margin: 0 0 18px;
@@ -629,7 +629,7 @@ div.blog a.more:hover {
 }
 
 #blog #sidebar {
-    background: url(./../assets/images/separator-light-vertical.png) repeat-y left top;
+    background: url(./../public/images/separator-light-vertical.png) repeat-y left top;
     min-height: 899px;
     width: 240px;
     margin-left: 0;
@@ -637,7 +637,7 @@ div.blog a.more:hover {
 }
 
 #blog #sidebar>div {
-    background: url(./../assets/images/separator-light.png) repeat-x left top;
+    background: url(./../public/images/separator-light.png) repeat-x left top;
     margin: 0 0 24px;
     padding: 24px 0 0;
 }
@@ -698,7 +698,7 @@ div.blog a.more:hover {
 }
 
 #blog div.viewer {
-    background: url(./../assets/images/separator-light.png) repeat-x left bottom;
+    background: url(./../public/images/separator-light.png) repeat-x left bottom;
     margin: 0 0 30px;
     padding: 0 0 24px;
 }
@@ -829,7 +829,7 @@ div.blog a.more:hover {
 
 /** Contact **/
 #contact form {
-    background: url(./../assets/images/separator-light.png) repeat-x left top;
+    background: url(./../public/images/separator-light.png) repeat-x left top;
     padding: 30px 0 0;
 }
 
@@ -914,7 +914,7 @@ div.blog a.more:hover {
 }
 
 #links {
-    background: url(./../assets/images/separator-dark.png) repeat-x left bottom;
+    background: url(./../public/images/separator-dark.png) repeat-x left bottom;
     color: #4b3a33;
     display: inline-block;
     width: 940px;
@@ -934,7 +934,7 @@ div.blog a.more:hover {
 
 #links>div {
     float: left;
-    background: url(./../assets/images/separator-dark-vertical.png) repeat-y left top;
+    background: url(./../public/images/separator-dark-vertical.png) repeat-y left top;
     height: 300px;
     padding-left: 20px;
 }
@@ -976,7 +976,7 @@ div.blog a.more:hover {
 }
 
 #newsletter {
-    background: url(./../assets/images/separator-dark.png) repeat-x left bottom;
+    background: url(./../public/images/separator-dark.png) repeat-x left bottom;
     width: 284px;
     margin: 0 0 16px 6px;
     padding: 0 0 20px;

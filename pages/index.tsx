@@ -3,38 +3,38 @@ import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import showRoom from "./../assets/images/show-room.png"
-import logo from './../assets/images/logo.png'
+import showRoom from "./../public/images/show-room.png"
+import logo from './../public/images/logo.png'
 import Slider from "react-slick";
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import useMobileView from '../hooks/useMobileView'
 
-import slide1 from './../assets/images/slideshow/1.jpg'
-import slide2 from './../assets/images/slideshow/2.jpg'
-import slide3 from './../assets/images/slideshow/3.jpg'
-import slide4 from './../assets/images/slideshow/4.jpg'
-import slide5 from './../assets/images/slideshow/5.jpg'
-import slide6 from './../assets/images/slideshow/6.jpg'
-import slide7 from './../assets/images/slideshow/7.jpg'
+import slide1 from './../public/images/slideshow/1.jpg'
+import slide2 from './../public/images/slideshow/2.jpg'
+import slide3 from './../public/images/slideshow/3.jpg'
+import slide4 from './../public/images/slideshow/4.jpg'
+import slide5 from './../public/images/slideshow/5.jpg'
+import slide6 from './../public/images/slideshow/6.jpg'
+import slide7 from './../public/images/slideshow/7.jpg'
 
-import announcImage from './../assets/images/pengumuman.jpg'
-import jakone from './../assets/images/jakone.jpeg'
-import ads1 from './../assets/images/ads1.jpg'
-import ads2 from './../assets/images/ads2.jpeg'
-import karir from './../assets/images/karir.jpeg'
-import kegiatan from './../assets/images/kegiatan.jpeg'
-import ppatr from './../assets/images/ppatr.png'
+import announcImage from './../public/images/pengumuman.jpg'
+import jakone from './../public/images/jakone.jpeg'
+import ads1 from './../public/images/ads1.jpg'
+import ads2 from './../public/images/ads2.jpeg'
+import karir from './../public/images/karir.jpeg'
+import kegiatan from './../public/images/kegiatan.jpeg'
+import ppatr from './../public/images/ppatr.png'
 
-import gallery1 from './../assets/images/gallery/1.jpg'
-import gallery2 from './../assets/images/gallery/2.jpg'
-import gallery3 from './../assets/images/gallery/3.jpg'
-import gallery4 from './../assets/images/gallery/4.jpg'
-import gallery5 from './../assets/images/gallery/5.jpg'
-import gallery6 from './../assets/images/gallery/6.jpg'
-import gallery7 from './../assets/images/gallery/7.jpg'
-import gallery8 from './../assets/images/gallery/8.jpeg'
-import gallery9 from './../assets/images/gallery/9.jpeg'
-import gallery10 from './../assets/images/gallery/10.jpeg'
+import gallery1 from './../public/images/gallery/1.jpg'
+import gallery2 from './../public/images/gallery/2.jpg'
+import gallery3 from './../public/images/gallery/3.jpg'
+import gallery4 from './../public/images/gallery/4.jpg'
+import gallery5 from './../public/images/gallery/5.jpg'
+import gallery6 from './../public/images/gallery/6.jpg'
+import gallery7 from './../public/images/gallery/7.jpg'
+import gallery8 from './../public/images/gallery/8.jpeg'
+import gallery9 from './../public/images/gallery/9.jpeg'
+import gallery10 from './../public/images/gallery/10.jpeg'
 import Sidebar from '../components/Sidebar'
 
 const slideshow = [
@@ -143,7 +143,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-[url(./../assets/images/bg1.jpg)] bg-black bg-cover bg-fixed min-h-screen flex flex-col text-chocolate-900'>
+      <main className='bg-[url(./../public/images/bg1.jpg)] bg-black bg-cover bg-fixed min-h-screen flex flex-col text-chocolate-900'>
 
         {/* HEADER */}
         <header className='bg-chocolate-900 flex flex-col items-center justify-center pt-10'>
@@ -454,7 +454,7 @@ const Home: NextPage = () => {
         <footer className='bg-chocolate-100 border-t border-white py-5 sm:p-10 flex justify-center items-center mt-auto'>
           <div className='w-full md:w-[1100px]'>
 
-            <div className='flex md:flex-row flex-col space-y-5 md:space-y-0 bg-[url(./../assets/images/separator-dark.png)] bg-repeat-x bg-left-bottom text-chocolate-900 pb-5'>
+            <div className='flex md:flex-row flex-col space-y-5 md:space-y-0 bg-[url(./../public/images/separator-dark.png)] bg-repeat-x bg-left-bottom text-chocolate-900 pb-5'>
 
               <div className="w-full pr-5 px-5 md:px-0">
                 <h4 className='uppercase font-oswald mb-3'>Visit our Showroom</h4>
@@ -464,7 +464,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
 
-              <div className='w-full px-5 bg-[url(./../assets/images/separator-dark.png)] md:bg-[url(./../assets/images/separator-dark-vertical.png)] bg-repeat-x md:bg-repeat-y bg-left-top'>
+              <div className='w-full px-5 bg-[url(./../public/images/separator-dark.png)] md:bg-[url(./../public/images/separator-dark-vertical.png)] bg-repeat-x md:bg-repeat-y bg-left-top'>
                 <h4 className='uppercase font-oswald mb-3 pt-5 md:pt-0'>Recent Blog Posts</h4>
                 <ul className="posts space-y-2">
                   <li>
@@ -488,8 +488,8 @@ const Home: NextPage = () => {
                 </ul>
               </div>
 
-              <div className='w-full pl-5 pr-5 md:pr-0 bg-[url(./../assets/images/separator-dark.png)] md:bg-[url(./../assets/images/separator-dark-vertical.png)] bg-repeat-x md:bg-repeat-y bg-left-top'>
-                <form action="#" method="post" className='bg-[url(./../assets/images/separator-dark.png)] bg-repeat-x bg-left-bottom pb-8 mb-5 flex flex-col'>
+              <div className='w-full pl-5 pr-5 md:pr-0 bg-[url(./../public/images/separator-dark.png)] md:bg-[url(./../public/images/separator-dark-vertical.png)] bg-repeat-x md:bg-repeat-y bg-left-top'>
+                <form action="#" method="post" className='bg-[url(./../public/images/separator-dark.png)] bg-repeat-x bg-left-bottom pb-8 mb-5 flex flex-col'>
                   <h4 className='uppercase font-oswald mb-3 pt-5 md:pt-0'>Join Our Newsletter</h4>
                   <input type="text" placeholder="Enter Email Address Here For Updates..." className='text-chocolate-500 px-2 py-0.5 outline-none border-[3px] rounded-md border-chocolate-300 mb-2 w-full' />
                   <input type="submit" value="Sign up" className="cursor-pointer bg-chocolate-500 hover:bg-chocolate-300 text-white w-20 py-1 rounded-md" />

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import logo from './../assets/images/logo.png'
+import logo from './../public/images/logo.png'
 
 type Props = {};
 

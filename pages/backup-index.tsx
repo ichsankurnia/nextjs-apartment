@@ -1,15 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import logo from './../assets/images/logo.png'
-import chair from "./../assets/images/chair.jpg"
-import livingRoom from "./../assets/images/living-room.jpg"
-import bedRoom from "./../assets/images/bedroom.jpg"
-import kitchen from "./../assets/images/kitchen.jpg"
-import carving from "./../assets/images/carving-small.png"
-import resort from "./../assets/images/resort-small.png"
-import showRoom from "./../assets/images/show-room.png"
-import adDetails from './../assets/images/bg-pattern.jpg'
+import logo from './../public/images/logo.png'
+import chair from "./../public/images/chair.jpg"
+import livingRoom from "./../public/images/living-room.jpg"
+import bedRoom from "./../public/images/bedroom.jpg"
+import kitchen from "./../public/images/kitchen.jpg"
+import carving from "./../public/images/carving-small.png"
+import resort from "./../public/images/resort-small.png"
+import showRoom from "./../public/images/show-room.png"
+import adDetails from './../public/images/bg-pattern.jpg'
 import Link from 'next/link'
 
 const BackUpIndex: NextPage = () => {
@@ -74,7 +74,7 @@ const BackUpIndex: NextPage = () => {
               <div className='cursor-pointer'>
                 <img src={livingRoom} alt="Img" className='w-full hover:opacity-40' /> <a href="index.html"></a>
               </div>
-              <div className="bg-[url(./../assets/images/separator-light.png)] bg-repeat-x bg-left-top px-5 py-5">
+              <div className="bg-[url(./../public/images/separator-light.png)] bg-repeat-x bg-left-top px-5 py-5">
                 <h4 className='text-chocolate-100 mb-2 uppercase font-oswald'>Living Room</h4>
                 <p>
                   This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text.
@@ -85,7 +85,7 @@ const BackUpIndex: NextPage = () => {
               <div className='cursor-pointer'>
                 <img src={bedRoom} alt="Img" className='w-full hover:opacity-40' /> <a href="index.html"></a>
               </div>
-              <div className="bg-[url(./../assets/images/separator-light.png)] bg-repeat-x bg-left-top px-5 py-5">
+              <div className="bg-[url(./../public/images/separator-light.png)] bg-repeat-x bg-left-top px-5 py-5">
                 <h4 className='text-chocolate-100 mb-2 uppercase font-oswald'>Bedroom</h4>
                 <p>
                   You can remove any link to our website from this website template, you're free to use this website template without linking back to us.
@@ -96,7 +96,7 @@ const BackUpIndex: NextPage = () => {
               <div className='cursor-pointer'>
                 <img src={kitchen} alt="Img" className='w-full hover:opacity-40' /> <a href="index.html"></a>
               </div>
-              <div className="bg-[url(./../assets/images/separator-light.png)] bg-repeat-x bg-left-top px-5 py-5">
+              <div className="bg-[url(./../public/images/separator-light.png)] bg-repeat-x bg-left-top px-5 py-5">
                 <h4 className='text-chocolate-100 mb-2 uppercase font-oswald'>Kitchen</h4>
                 <p>
                   If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forum</a>.
@@ -107,7 +107,7 @@ const BackUpIndex: NextPage = () => {
 
           <div className='flex flex-col sm:flex-row'>
 
-            <div className="bg-[url(./../assets/images/separator-light-vertical.png)] bg-repeat-y bg-right-top float-left w-full sm:w-[320px] pt-5 pb-2 px-7 font-oswald uppercase">
+            <div className="bg-[url(./../public/images/separator-light-vertical.png)] bg-repeat-y bg-right-top float-left w-full sm:w-[320px] pt-5 pb-2 px-7 font-oswald uppercase">
               <div>
                 <p className='text-[#7b7b7b] text-[14px]'>
                   For Order and Inquiries Please Call:
@@ -125,7 +125,7 @@ const BackUpIndex: NextPage = () => {
             <div className='font-oswald flex-1'>
               <h4 className='text-grey text-[14px] uppercase p-5 px-7'>From the Blog</h4>
               <div className='flex items-center justify-around flex-col sm:flex-row'>
-                <div className='bg-[url(./../assets/images/bg-box.png)] bg-no-repeat bg-left-top text-chocolate-900 w-[270px]'>
+                <div className='bg-[url(./../public/images/bg-box.png)] bg-no-repeat bg-left-top text-chocolate-900 w-[270px]'>
                   <img src={carving} alt="Img" className='float-right' />
                   <div className='p-5 text-sm'>
                     <p className='text-[12px] font-quattrocentoSans font-thin'>April 16, 2023</p>
@@ -134,7 +134,7 @@ const BackUpIndex: NextPage = () => {
                   </div>
 
                 </div>
-                <div className='bg-[url(./../assets/images/bg-box.png)] bg-no-repeat bg-left-top text-chocolate-900 w-[270px]'>
+                <div className='bg-[url(./../public/images/bg-box.png)] bg-no-repeat bg-left-top text-chocolate-900 w-[270px]'>
                   <img src={resort} alt="Img" className='float-right' />
                   <div className='p-5 text-sm'>
                     <p className='text-[12px] font-quattrocentoSans font-thin'>April 15, 2023</p>
@@ -152,7 +152,7 @@ const BackUpIndex: NextPage = () => {
 
           <div className='w-full md:w-[950px]'>
 
-            <div className='flex md:flex-row flex-col space-y-5 md:space-y-0 bg-[url(./../assets/images/separator-dark.png)] bg-repeat-x bg-left-bottom text-chocolate-900 pb-5'>
+            <div className='flex md:flex-row flex-col space-y-5 md:space-y-0 bg-[url(./../public/images/separator-dark.png)] bg-repeat-x bg-left-bottom text-chocolate-900 pb-5'>
               
               <div className="w-full pr-5 px-5 md:px-0">
                 <h4 className='uppercase font-oswald mb-3'>Visit our Showroom</h4>
@@ -162,7 +162,7 @@ const BackUpIndex: NextPage = () => {
                 </p>
               </div>
 
-              <div className='w-full px-5 bg-[url(./../assets/images/separator-dark.png)] md:bg-[url(./../assets/images/separator-dark-vertical.png)] bg-repeat-x md:bg-repeat-y bg-left-top'>
+              <div className='w-full px-5 bg-[url(./../public/images/separator-dark.png)] md:bg-[url(./../public/images/separator-dark-vertical.png)] bg-repeat-x md:bg-repeat-y bg-left-top'>
                 <h4 className='uppercase font-oswald mb-3 pt-5 md:pt-0'>Recent Blog Posts</h4>
                 <ul className="posts space-y-2">
                   <li>
@@ -186,8 +186,8 @@ const BackUpIndex: NextPage = () => {
                 </ul>
               </div>
 
-              <div className='w-full pl-5 pr-5 md:pr-0 bg-[url(./../assets/images/separator-dark.png)] md:bg-[url(./../assets/images/separator-dark-vertical.png)] bg-repeat-x md:bg-repeat-y bg-left-top'>
-                <form action="#" method="post" className='bg-[url(./../assets/images/separator-dark.png)] bg-repeat-x bg-left-bottom pb-8 mb-5 flex flex-col'>
+              <div className='w-full pl-5 pr-5 md:pr-0 bg-[url(./../public/images/separator-dark.png)] md:bg-[url(./../public/images/separator-dark-vertical.png)] bg-repeat-x md:bg-repeat-y bg-left-top'>
+                <form action="#" method="post" className='bg-[url(./../public/images/separator-dark.png)] bg-repeat-x bg-left-bottom pb-8 mb-5 flex flex-col'>
                   <h4 className='uppercase font-oswald mb-3 pt-5 md:pt-0'>Join Our Newsletter</h4>
                   <input type="text" placeholder="Enter Email Address Here For Updates..." className='text-chocolate-500 px-2 py-0.5 outline-none border-[3px] rounded-md border-chocolate-300 mb-2 w-full' />
                   <input type="submit" value="Sign up" className="btn2 text-white" />
