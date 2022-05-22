@@ -143,7 +143,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-[url(./../public/images/bg1.jpg)] bg-black bg-cover bg-fixed min-h-screen flex flex-col text-chocolate-900'>
+      <main className='bg-[url(/images/bg1.jpg)] bg-black bg-cover bg-fixed min-h-screen flex flex-col text-chocolate-900'>
 
         {/* HEADER */}
         <header className='bg-chocolate-900 flex flex-col items-center justify-center pt-10'>
@@ -454,7 +454,7 @@ const Home: NextPage = () => {
         <footer className='bg-chocolate-100 border-t border-white py-5 sm:p-10 flex justify-center items-center mt-auto'>
           <div className='w-full md:w-[1100px]'>
 
-            <div className='flex md:flex-row flex-col space-y-5 md:space-y-0 bg-[url(./../public/images/separator-dark.png)] bg-repeat-x bg-left-bottom text-chocolate-900 pb-5'>
+            <div className='flex md:flex-row flex-col space-y-5 md:space-y-0 bg-[url(/images/separator-dark.png)] bg-repeat-x bg-left-bottom text-chocolate-900 pb-5'>
 
               <div className="w-full pr-5 px-5 md:px-0">
                 <h4 className='uppercase font-oswald mb-3'>Visit our Showroom</h4>
@@ -464,7 +464,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
 
-              <div className='w-full px-5 bg-[url(./../public/images/separator-dark.png)] md:bg-[url(./../public/images/separator-dark-vertical.png)] bg-repeat-x md:bg-repeat-y bg-left-top'>
+              <div className='w-full px-5 bg-[url(/images/separator-dark.png)] md:bg-[url(/images/separator-dark-vertical.png)] bg-repeat-x md:bg-repeat-y bg-left-top'>
                 <h4 className='uppercase font-oswald mb-3 pt-5 md:pt-0'>Recent Blog Posts</h4>
                 <ul className="posts space-y-2">
                   <li>
@@ -488,8 +488,8 @@ const Home: NextPage = () => {
                 </ul>
               </div>
 
-              <div className='w-full pl-5 pr-5 md:pr-0 bg-[url(./../public/images/separator-dark.png)] md:bg-[url(./../public/images/separator-dark-vertical.png)] bg-repeat-x md:bg-repeat-y bg-left-top'>
-                <form action="#" method="post" className='bg-[url(./../public/images/separator-dark.png)] bg-repeat-x bg-left-bottom pb-8 mb-5 flex flex-col'>
+              <div className='w-full pl-5 pr-5 md:pr-0 bg-[url(/images/separator-dark.png)] md:bg-[url(/images/separator-dark-vertical.png)] bg-repeat-x md:bg-repeat-y bg-left-top'>
+                <form action="#" method="post" className='bg-[url(/images/separator-dark.png)] bg-repeat-x bg-left-bottom pb-8 mb-5 flex flex-col'>
                   <h4 className='uppercase font-oswald mb-3 pt-5 md:pt-0'>Join Our Newsletter</h4>
                   <input type="text" placeholder="Enter Email Address Here For Updates..." className='text-chocolate-500 px-2 py-0.5 outline-none border-[3px] rounded-md border-chocolate-300 mb-2 w-full' />
                   <input type="submit" value="Sign up" className="cursor-pointer bg-chocolate-500 hover:bg-chocolate-300 text-white w-20 py-1 rounded-md" />
