@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useEffect, useRef, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import logo from './../public/images/logo.png'
@@ -7,6 +8,8 @@ type Props = {};
 
 const Sidebar: React.FC<Props> = ({ }) => {
     const [sidebarOpen, setSidebarOpen] = useState(false)
+
+	const { asPath } = useRouter()
 
     const trigger = useRef<any>(null);
     const sidebar = useRef<any>(null);
@@ -70,37 +73,37 @@ const Sidebar: React.FC<Props> = ({ }) => {
                         </Link>
 
                         <ul className='flex flex-col text-gray-300'>
-                            <li className='text-chocolate-100 inline-flex p-2.5 border-b-2 border-chocolate-100'>
+                            <li className={`${asPath==='/'? 'text-chocolate-100 border-chocolate-100': 'border-transparent'} hover:text-white inline-flex p-2.5 border-b-2 hover:border-white`} onClick={()=>setSidebarOpen(false)}>
                                 <Link href='/'>Beranda</Link>
                             </li>
-                            <li className='hover:text-white inline-flex p-2.5 border-b-2 border-transparent hover:border-white'>
+                            <li className={`${asPath==='/about'? 'text-chocolate-100 border-chocolate-100': 'border-transparent'} hover:text-white inline-flex p-2.5 border-b-2 hover:border-white`} onClick={()=>setSidebarOpen(false)}>
                                 <Link href='/about'>Tentang Kami</Link>
                             </li>
-                            <li className='hover:text-white inline-flex p-2.5 border-b-2 border-transparent hover:border-white'>
-                                <Link href='/gallery'>Pengumuman</Link>
+                            <li className={`${asPath==='/announcement'? 'text-chocolate-100 border-chocolate-100': 'border-transparent'} hover:text-white inline-flex p-2.5 border-b-2 hover:border-white`} onClick={()=>setSidebarOpen(false)}>
+                                <Link href='/announcement'>Pengumuman</Link>
                             </li>
-                            <li className='hover:text-white inline-flex p-2.5 border-b-2 border-transparent hover:border-white'>
+                            <li className={`${asPath==='/blog'? 'text-chocolate-100 border-chocolate-100': 'border-transparent'} hover:text-white inline-flex p-2.5 border-b-2 hover:border-white`} onClick={()=>setSidebarOpen(false)}>
                                 <Link href='/blog'>Kegiatan</Link>
                             </li>
-                            <li className='hover:text-white inline-flex p-2.5 border-b-2 border-transparent hover:border-white'>
-                                <Link href='/contact'>Informasi</Link>
+                            <li className={`${asPath==='/information'? 'text-chocolate-100 border-chocolate-100': 'border-transparent'} hover:text-white inline-flex p-2.5 border-b-2 hover:border-white`} onClick={()=>setSidebarOpen(false)}>
+                                <Link href='/information'>Informasi</Link>
                             </li>
-                            <li className='hover:text-white inline-flex p-2.5 border-b-2 border-transparent hover:border-white'>
-                                <Link href='/contact'>Rekanan</Link>
+                            <li className={`${asPath==='/partner'? 'text-chocolate-100 border-chocolate-100': 'border-transparent'} hover:text-white inline-flex p-2.5 border-b-2 hover:border-white`} onClick={()=>setSidebarOpen(false)}>
+                                <Link href='/partner'>Rekanan</Link>
                             </li>
-                            <li className='hover:text-white inline-flex p-2.5 border-b-2 border-transparent hover:border-white'>
-                                <Link href='/contact'>Tender</Link>
+                            <li className={`${asPath==='/tender'? 'text-chocolate-100 border-chocolate-100': 'border-transparent'} hover:text-white inline-flex p-2.5 border-b-2 hover:border-white`} onClick={()=>setSidebarOpen(false)}>
+                                <Link href='/tender'>Tender</Link>
                             </li>
-                            <li className='hover:text-white inline-flex p-2.5 border-b-2 border-transparent hover:border-white'>
-                                <Link href='/contact'>Karir</Link>
+                            <li className={`${asPath==='/career'? 'text-chocolate-100 border-chocolate-100': 'border-transparent'} hover:text-white inline-flex p-2.5 border-b-2 hover:border-white`} onClick={()=>setSidebarOpen(false)}>
+                                <Link href='/career'>Karir</Link>
                             </li>
-                            <li className='hover:text-white inline-flex p-2.5 border-b-2 border-transparent hover:border-white'>
-                                <Link href='/contact'>FAQ</Link>
+                            <li className={`${asPath==='/faq'? 'text-chocolate-100 border-chocolate-100': 'border-transparent'} hover:text-white inline-flex p-2.5 border-b-2 hover:border-white`} onClick={()=>setSidebarOpen(false)}>
+                                <Link href='/faq'>FAQ</Link>
                             </li>
-                            <li className='hover:text-white inline-flex p-2.5 border-b-2 border-transparent hover:border-white'>
-                                <Link href='/contact'>Jual/sewa</Link>
+                            <li className={`${asPath==='/sell-rent'? 'text-chocolate-100 border-chocolate-100': 'border-transparent'} hover:text-white inline-flex p-2.5 border-b-2 hover:border-white`} onClick={()=>setSidebarOpen(false)}>
+                                <Link href='/sell-rent'>Jual/sewa</Link>
                             </li>
-                            <li className='hover:text-white inline-flex p-2.5 border-b-2 border-transparent hover:border-white'>
+                            <li className={`${asPath==='/contact'? 'text-chocolate-100 border-chocolate-100': 'border-transparent'} hover:text-white inline-flex p-2.5 border-b-2 hover:border-white`} onClick={()=>setSidebarOpen(false)}>
                                 <Link href='/contact'>Kontak</Link>
                             </li>
                         </ul>
