@@ -5,9 +5,7 @@ class CustomDocument extends Document {
   render = () => (
     <Html lang="en">
       <Head>
-        <meta name="theme-color" content="#000000" />
         <meta name="build version" content={packageJson.version} />
-        <link rel="icon" href="/images/logo.png" />
         <link
           rel="preload"
           href="/fonts/Oswald.woff"
