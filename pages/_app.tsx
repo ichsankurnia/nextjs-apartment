@@ -2,12 +2,26 @@ import '../styles/globals.css'
 // import '../styles/style.css'
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import type { AppProps } from 'next/app'
-import { useEffect } from 'react';
+import { ReactElement, ReactNode, useEffect } from 'react';
 import { Router } from 'next/router';
 import NProgress from 'nprogress';
 import Head from 'next/head';
+import { NextPage } from 'next';
 
-function MyApp({ Component, pageProps }: AppProps) {
+
+export type NextPageWithLayout = NextPage & {
+  getLayout?: (page: ReactElement) => ReactNode
+}
+
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout
+}
+
+
+function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+  // Use the layout defined at the page level, if available
+  const getLayout = Component.getLayout ?? ((page: ReactNode) => page)
+
   NProgress.configure({ showSpinner: false });
 
   useEffect(() => {
@@ -30,12 +44,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, []);
 
-  return (
+  return getLayout(
     <>
       <Head>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-        
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css' integrity='sha512-42kB9yDlYiCEfx2xVwq0q7hT4uf26FUgSIZBK8uiaEnTdShXjwr8Ip1V4xGJMg3mHkUt9nNuTDxunHF0/EgxLQ==' crossOrigin='anonymous' referrerPolicy='no-referrer' />
       </Head>
