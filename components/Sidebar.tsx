@@ -62,10 +62,10 @@ const Sidebar: React.FC<Props> = ({ }) => {
 
 
                 <div id="sidebar" ref={sidebar}
-                    className={`absolute md:hidden z-40 left-0 top-0 transform transition-all duration-700 ease-in-out
+                    className={`fixed md:hidden z-40 left-0 top-0 transform transition-all duration-700 ease-in-out h-screen
                     ${sidebarOpen ? 'translate-x-0' : '-translate-x-64'} w-64 `}
                 >
-                    <div className={`overflow-x-hidden flex flex-col text-white text-left px-5`}>
+                    <div className={`overflow-x-hidden flex flex-col text-white text-left px-5 h-full`} onClick={()=>setSidebarOpen(false)}>
                         <Link href='/'>
                             <div className='w-full px-4 mb-5 mt-6'>
                                 <LazyLoadImage src={logo} alt='' effect='blur' />
