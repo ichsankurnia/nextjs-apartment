@@ -18,7 +18,10 @@ module.exports = {
         'chocolate-300': '#ab7d0f',
         'chocolate-100': '#e2b241',
         'grey': '#7b7b7b'
-      }
+      },
+      gridTemplateColumns: {
+        "fit-200": "repeat(auto-fit, minmax(300px, 1fr))"
+      },
     },
   },
   plugins: [],
